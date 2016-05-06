@@ -56,7 +56,7 @@
             this.acercaDeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(461, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(597, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -103,21 +103,21 @@
             // 
             this.cortarToolStripMenuItem.Name = "cortarToolStripMenuItem";
             this.cortarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cortarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cortarToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.cortarToolStripMenuItem.Text = "Cortar";
             // 
             // copiarToolStripMenuItem
             // 
             this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
             this.copiarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.copiarToolStripMenuItem.Text = "Copiar";
             // 
             // pegarToolStripMenuItem
             // 
             this.pegarToolStripMenuItem.Name = "pegarToolStripMenuItem";
             this.pegarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pegarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pegarToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.pegarToolStripMenuItem.Text = "Pegar";
             // 
             // generadoresToolStripMenuItem
@@ -133,21 +133,21 @@
             // vonNeumanToolStripMenuItem
             // 
             this.vonNeumanToolStripMenuItem.Name = "vonNeumanToolStripMenuItem";
-            this.vonNeumanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vonNeumanToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.vonNeumanToolStripMenuItem.Text = "Von Neuman";
             this.vonNeumanToolStripMenuItem.Click += new System.EventHandler(this.vonNeumanToolStripMenuItem_Click);
             // 
             // fibonachiToolStripMenuItem
             // 
             this.fibonachiToolStripMenuItem.Name = "fibonachiToolStripMenuItem";
-            this.fibonachiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fibonachiToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.fibonachiToolStripMenuItem.Text = "Fibonachi";
             this.fibonachiToolStripMenuItem.Click += new System.EventHandler(this.fibonachiToolStripMenuItem_Click);
             // 
             // otroToolStripMenuItem
             // 
             this.otroToolStripMenuItem.Name = "otroToolStripMenuItem";
-            this.otroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.otroToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.otroToolStripMenuItem.Text = "Congruencia";
             this.otroToolStripMenuItem.Click += new System.EventHandler(this.otroToolStripMenuItem_Click);
             // 
@@ -163,7 +163,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(461, 348);
+            this.ClientSize = new System.Drawing.Size(597, 437);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;

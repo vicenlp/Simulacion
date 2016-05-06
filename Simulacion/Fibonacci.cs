@@ -18,6 +18,12 @@ namespace Simulacion
         public Fibonacci()
         {
             InitializeComponent();
+            numericUpDown1.Visible = false;
+            panel_intervalo.Visible = false;
+            //if (radioButton_intervalo.Checked)
+            //{
+
+            //}
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
@@ -84,14 +90,19 @@ namespace Simulacion
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             // no acceder directamente a N sin ingresar v1 y v2 primero
-            ////if (textBox_ingreseV1.Text == " " & textBox_ingreseV2.Text == " ")
-            ////{
-            ////    numericUpDown1.Visible = false;
-            ////}
-            int v1 = Convert.ToInt32(textBox_ingreseV1.Text);
-            int v2 = Convert.ToInt32(textBox_ingreseV2.Text);
-            int inicial = v1.ToString().Length + v2.ToString().Length;
-            numericUpDown1.Minimum = inicial;
+            //if (textBox_ingreseV1.Text == "" & textBox_ingreseV2.Text == "")
+            //{
+            //    numericUpDown1.Visible = false;
+            //}
+            //else
+            //{
+                numericUpDown1.Visible = true;
+                int v1 = Convert.ToInt32(textBox_ingreseV1.Text);
+                int v2 = Convert.ToInt32(textBox_ingreseV2.Text);
+                int inicial = v1.ToString().Length + v2.ToString().Length;
+                numericUpDown1.Minimum = inicial;
+            //}
+            
         }
 
         private void textBox_ingreseA_TextChanged(object sender, EventArgs e)
@@ -119,6 +130,8 @@ namespace Simulacion
             else
             {
                 errorProvider1.Clear();
+                
+
             }
         }
 
@@ -142,6 +155,7 @@ namespace Simulacion
             else
             {
                 errorProvider1.Clear();
+               
             }
         }
 
@@ -165,6 +179,7 @@ namespace Simulacion
             else
             {
                 errorProvider1.Clear();
+                numericUpDown1.Visible = true;
             }
         }
 

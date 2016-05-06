@@ -41,8 +41,17 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.textBox_resultado = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.radioButton_intervalo = new System.Windows.Forms.RadioButton();
+            this.numericUpDown_inferior = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_superior = new System.Windows.Forms.NumericUpDown();
+            this.panel_intervalo = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_inferior)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_superior)).BeginInit();
+            this.panel_intervalo.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -113,7 +122,7 @@
             // 
             // button_generar
             // 
-            this.button_generar.Location = new System.Drawing.Point(25, 201);
+            this.button_generar.Location = new System.Drawing.Point(25, 291);
             this.button_generar.Name = "button_generar";
             this.button_generar.Size = new System.Drawing.Size(100, 35);
             this.button_generar.TabIndex = 9;
@@ -149,7 +158,7 @@
             this.textBox_resultado.Name = "textBox_resultado";
             this.textBox_resultado.ReadOnly = true;
             this.textBox_resultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox_resultado.Size = new System.Drawing.Size(278, 139);
+            this.textBox_resultado.Size = new System.Drawing.Size(278, 186);
             this.textBox_resultado.TabIndex = 11;
             // 
             // errorProvider1
@@ -157,11 +166,97 @@
             this.errorProvider1.ContainerControl = this;
             this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
             // 
+            // radioButton_intervalo
+            // 
+            this.radioButton_intervalo.AutoSize = true;
+            this.radioButton_intervalo.Location = new System.Drawing.Point(25, 194);
+            this.radioButton_intervalo.Name = "radioButton_intervalo";
+            this.radioButton_intervalo.Size = new System.Drawing.Size(99, 17);
+            this.radioButton_intervalo.TabIndex = 13;
+            this.radioButton_intervalo.TabStop = true;
+            this.radioButton_intervalo.Text = "Utilizar intervalo";
+            this.radioButton_intervalo.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown_inferior
+            // 
+            this.numericUpDown_inferior.Location = new System.Drawing.Point(24, 12);
+            this.numericUpDown_inferior.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.numericUpDown_inferior.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_inferior.Name = "numericUpDown_inferior";
+            this.numericUpDown_inferior.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown_inferior.TabIndex = 14;
+            this.numericUpDown_inferior.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDown_superior
+            // 
+            this.numericUpDown_superior.Location = new System.Drawing.Point(24, 38);
+            this.numericUpDown_superior.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.numericUpDown_superior.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_superior.Name = "numericUpDown_superior";
+            this.numericUpDown_superior.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown_superior.TabIndex = 15;
+            this.numericUpDown_superior.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // panel_intervalo
+            // 
+            this.panel_intervalo.Controls.Add(this.label6);
+            this.panel_intervalo.Controls.Add(this.label5);
+            this.panel_intervalo.Controls.Add(this.numericUpDown_inferior);
+            this.panel_intervalo.Controls.Add(this.numericUpDown_superior);
+            this.panel_intervalo.Location = new System.Drawing.Point(130, 182);
+            this.panel_intervalo.Name = "panel_intervalo";
+            this.panel_intervalo.Size = new System.Drawing.Size(73, 65);
+            this.panel_intervalo.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "A:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 40);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(17, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "B:";
+            // 
             // Fibonacci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 249);
+            this.ClientSize = new System.Drawing.Size(550, 351);
+            this.Controls.Add(this.panel_intervalo);
+            this.Controls.Add(this.radioButton_intervalo);
             this.Controls.Add(this.textBox_resultado);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button_generar);
@@ -176,6 +271,10 @@
             this.Text = "Fibonacci";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_inferior)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_superior)).EndInit();
+            this.panel_intervalo.ResumeLayout(false);
+            this.panel_intervalo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +293,11 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.TextBox textBox_resultado;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Panel panel_intervalo;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.NumericUpDown numericUpDown_inferior;
+        private System.Windows.Forms.NumericUpDown numericUpDown_superior;
+        private System.Windows.Forms.RadioButton radioButton_intervalo;
     }
 }
