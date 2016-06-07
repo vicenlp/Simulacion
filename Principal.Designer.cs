@@ -41,8 +41,11 @@
             this.generadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vonNeumanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fibonachiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.otroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.congruenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aditivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.multiplicativoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mixtoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,21 +106,21 @@
             // 
             this.cortarToolStripMenuItem.Name = "cortarToolStripMenuItem";
             this.cortarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cortarToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.cortarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cortarToolStripMenuItem.Text = "Cortar";
             // 
             // copiarToolStripMenuItem
             // 
             this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
             this.copiarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.copiarToolStripMenuItem.Text = "Copiar";
             // 
             // pegarToolStripMenuItem
             // 
             this.pegarToolStripMenuItem.Name = "pegarToolStripMenuItem";
             this.pegarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pegarToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.pegarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pegarToolStripMenuItem.Text = "Pegar";
             // 
             // generadoresToolStripMenuItem
@@ -125,7 +128,7 @@
             this.generadoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vonNeumanToolStripMenuItem,
             this.fibonachiToolStripMenuItem,
-            this.otroToolStripMenuItem});
+            this.congruenciaToolStripMenuItem});
             this.generadoresToolStripMenuItem.Name = "generadoresToolStripMenuItem";
             this.generadoresToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.generadoresToolStripMenuItem.Text = "Generadores";
@@ -133,23 +136,16 @@
             // vonNeumanToolStripMenuItem
             // 
             this.vonNeumanToolStripMenuItem.Name = "vonNeumanToolStripMenuItem";
-            this.vonNeumanToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.vonNeumanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.vonNeumanToolStripMenuItem.Text = "Von Neuman";
             this.vonNeumanToolStripMenuItem.Click += new System.EventHandler(this.vonNeumanToolStripMenuItem_Click);
             // 
             // fibonachiToolStripMenuItem
             // 
             this.fibonachiToolStripMenuItem.Name = "fibonachiToolStripMenuItem";
-            this.fibonachiToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.fibonachiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.fibonachiToolStripMenuItem.Text = "Fibonachi";
             this.fibonachiToolStripMenuItem.Click += new System.EventHandler(this.fibonachiToolStripMenuItem_Click);
-            // 
-            // otroToolStripMenuItem
-            // 
-            this.otroToolStripMenuItem.Name = "otroToolStripMenuItem";
-            this.otroToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
-            this.otroToolStripMenuItem.Text = "Congruencia";
-            this.otroToolStripMenuItem.Click += new System.EventHandler(this.otroToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem
             // 
@@ -157,6 +153,37 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
+            // 
+            // congruenciaToolStripMenuItem
+            // 
+            this.congruenciaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aditivoToolStripMenuItem,
+            this.multiplicativoToolStripMenuItem,
+            this.mixtoToolStripMenuItem});
+            this.congruenciaToolStripMenuItem.Name = "congruenciaToolStripMenuItem";
+            this.congruenciaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.congruenciaToolStripMenuItem.Text = "Congruencia";
+            // 
+            // aditivoToolStripMenuItem
+            // 
+            this.aditivoToolStripMenuItem.Name = "aditivoToolStripMenuItem";
+            this.aditivoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aditivoToolStripMenuItem.Text = "Aditivo";
+            this.aditivoToolStripMenuItem.Click += new System.EventHandler(this.aditivoToolStripMenuItem_Click);
+            // 
+            // multiplicativoToolStripMenuItem
+            // 
+            this.multiplicativoToolStripMenuItem.Name = "multiplicativoToolStripMenuItem";
+            this.multiplicativoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.multiplicativoToolStripMenuItem.Text = "Multiplicativo";
+            this.multiplicativoToolStripMenuItem.Click += new System.EventHandler(this.multiplicativoToolStripMenuItem_Click);
+            // 
+            // mixtoToolStripMenuItem
+            // 
+            this.mixtoToolStripMenuItem.Name = "mixtoToolStripMenuItem";
+            this.mixtoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mixtoToolStripMenuItem.Text = "Mixto";
+            this.mixtoToolStripMenuItem.Click += new System.EventHandler(this.mixtoToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -189,8 +216,11 @@
         private System.Windows.Forms.ToolStripMenuItem generadoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vonNeumanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fibonachiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem otroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem congruenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aditivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem multiplicativoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mixtoToolStripMenuItem;
     }
 }
 

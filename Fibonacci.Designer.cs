@@ -41,12 +41,12 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.textBox_resultado = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.radioButton_intervalo = new System.Windows.Forms.RadioButton();
             this.numericUpDown_inferior = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_superior = new System.Windows.Forms.NumericUpDown();
             this.panel_intervalo = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.checkBox_intervalo = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_inferior)).BeginInit();
@@ -122,9 +122,9 @@
             // 
             // button_generar
             // 
-            this.button_generar.Location = new System.Drawing.Point(25, 291);
+            this.button_generar.Location = new System.Drawing.Point(25, 284);
             this.button_generar.Name = "button_generar";
-            this.button_generar.Size = new System.Drawing.Size(100, 35);
+            this.button_generar.Size = new System.Drawing.Size(492, 42);
             this.button_generar.TabIndex = 9;
             this.button_generar.Text = "Generar";
             this.button_generar.UseVisualStyleBackColor = true;
@@ -166,17 +166,6 @@
             this.errorProvider1.ContainerControl = this;
             this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
             // 
-            // radioButton_intervalo
-            // 
-            this.radioButton_intervalo.AutoSize = true;
-            this.radioButton_intervalo.Location = new System.Drawing.Point(25, 194);
-            this.radioButton_intervalo.Name = "radioButton_intervalo";
-            this.radioButton_intervalo.Size = new System.Drawing.Size(99, 17);
-            this.radioButton_intervalo.TabIndex = 13;
-            this.radioButton_intervalo.TabStop = true;
-            this.radioButton_intervalo.Text = "Utilizar intervalo";
-            this.radioButton_intervalo.UseVisualStyleBackColor = true;
-            // 
             // numericUpDown_inferior
             // 
             this.numericUpDown_inferior.Location = new System.Drawing.Point(24, 12);
@@ -185,19 +174,9 @@
             0,
             0,
             0});
-            this.numericUpDown_inferior.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             this.numericUpDown_inferior.Name = "numericUpDown_inferior";
             this.numericUpDown_inferior.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown_inferior.TabIndex = 14;
-            this.numericUpDown_inferior.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // numericUpDown_superior
             // 
@@ -207,16 +186,11 @@
             0,
             0,
             0});
-            this.numericUpDown_superior.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             this.numericUpDown_superior.Name = "numericUpDown_superior";
             this.numericUpDown_superior.Size = new System.Drawing.Size(49, 20);
             this.numericUpDown_superior.TabIndex = 15;
             this.numericUpDown_superior.Value = new decimal(new int[] {
-            1,
+            9,
             0,
             0,
             0});
@@ -232,15 +206,6 @@
             this.panel_intervalo.Size = new System.Drawing.Size(73, 65);
             this.panel_intervalo.TabIndex = 16;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 13);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "A:";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -250,13 +215,32 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "B:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "A:";
+            // 
+            // checkBox_intervalo
+            // 
+            this.checkBox_intervalo.AutoSize = true;
+            this.checkBox_intervalo.Location = new System.Drawing.Point(25, 194);
+            this.checkBox_intervalo.Name = "checkBox_intervalo";
+            this.checkBox_intervalo.Size = new System.Drawing.Size(67, 17);
+            this.checkBox_intervalo.TabIndex = 17;
+            this.checkBox_intervalo.Text = "Intervalo";
+            this.checkBox_intervalo.UseVisualStyleBackColor = true;
+            // 
             // Fibonacci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 351);
+            this.Controls.Add(this.checkBox_intervalo);
             this.Controls.Add(this.panel_intervalo);
-            this.Controls.Add(this.radioButton_intervalo);
             this.Controls.Add(this.textBox_resultado);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button_generar);
@@ -298,6 +282,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown numericUpDown_inferior;
         private System.Windows.Forms.NumericUpDown numericUpDown_superior;
-        private System.Windows.Forms.RadioButton radioButton_intervalo;
+        private System.Windows.Forms.CheckBox checkBox_intervalo;
     }
 }

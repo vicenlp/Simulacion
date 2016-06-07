@@ -9,3 +9,7 @@ c:\users\hp user\documents\visual studio 2015\Projects\Simulacion\Simulacion\obj
 C:\Users\hp user\Documents\Visual Studio 2015\Projects\Simulacion\Simulacion\obj\Debug\Simulacion.Principal.resources
 C:\Users\hp user\Documents\Visual Studio 2015\Projects\Simulacion\Simulacion\obj\Debug\Simulacion.Fibonacci.resources
 C:\Users\hp user\Documents\Visual Studio 2015\Projects\Simulacion\Simulacion\obj\Debug\Simulacion.Congruencia.resources
+C:\Users\hp user\documents\visual studio 2015\Projects\Simulacion\Simulacion\obj\Debug\Simulacion.Vonneuman.resources
+C:\Users\hp user\documents\visual studio 2015\Projects\Simulacion\Simulacion\obj\Debug\Simulacion.Aditivo.resources
+C:\Users\hp user\documents\visual studio 2015\Projects\Simulacion\Simulacion\obj\Debug\Simulacion.Mixto.resources
+C:\Users\hp user\documents\visual studio 2015\Projects\Simulacion\Simulacion\obj\Debug\Simulacion.Multiplicativo.resources

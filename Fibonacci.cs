@@ -20,6 +20,9 @@ namespace Simulacion
             InitializeComponent();
             numericUpDown1.Visible = false;
             panel_intervalo.Visible = false;
+            checkBox_intervalo.Checked = false;
+            //textBox_ingreseV1.Text = "0";
+
             //if (radioButton_intervalo.Checked)
             //{
 
@@ -55,7 +58,7 @@ namespace Simulacion
                     v1 = v2;
                     v2 = v3;
                     //int cadena2 = cadena;
-                    incrementoI = (v2.ToString().Length);
+                    incrementoI = v2.ToString().Length;
                     //Math.Abs(v2) devuelve valor absoluto
                     cadena += v2.ToString().Length;
                     salida += Math.Abs(v2).ToString();
@@ -130,8 +133,7 @@ namespace Simulacion
             else
             {
                 errorProvider1.Clear();
-                
-
+         
             }
         }
 
@@ -179,7 +181,6 @@ namespace Simulacion
             else
             {
                 errorProvider1.Clear();
-                numericUpDown1.Visible = true;
             }
         }
 
@@ -198,11 +199,13 @@ namespace Simulacion
         }
         private void textBox_ingreseV1_KeyPress(object sender, KeyPressEventArgs e)
         {
+            numericUpDown1.Visible = true;
             v.soloNumeros(e);
         }
         private void textBox_ingreseV2_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.soloNumeros(e);
+
         }
 
         private void numericUpDown1_VisibleChanged(object sender, EventArgs e)

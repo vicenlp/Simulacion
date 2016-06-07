@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aditivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aditivo.Designer.cs">
+      <DependentUpon>Aditivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fibonacci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,18 @@
     </Compile>
     <Compile Include="Congruencia.Designer.cs">
       <DependentUpon>Congruencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mixto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mixto.Designer.cs">
+      <DependentUpon>Mixto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multiplicativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multiplicativo.Designer.cs">
+      <DependentUpon>Multiplicativo.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -73,11 +91,20 @@
     <Compile Include="Vonneuman.Designer.cs">
       <DependentUpon>Vonneuman.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Aditivo.resx">
+      <DependentUpon>Aditivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fibonacci.resx">
       <DependentUpon>Fibonacci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Congruencia.resx">
       <DependentUpon>Congruencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mixto.resx">
+      <DependentUpon>Mixto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multiplicativo.resx">
+      <DependentUpon>Multiplicativo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -91,6 +118,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vonneuman.resx">
+      <DependentUpon>Vonneuman.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

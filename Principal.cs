@@ -64,5 +64,29 @@ namespace Simulacion
         {
             MessageBox.Show("Programa de Cristian Gimenez :) Contacto:cristiangimenez1869@gmail.com", "Acerca de", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void aditivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.IsMdiContainer = true;
+            Aditivo agenerador = new Aditivo();
+            agenerador.MdiParent = this;
+            agenerador.Show();
+        }
+
+        private void multiplicativoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.IsMdiContainer = true;
+            Multiplicativo mgenerador = new Multiplicativo();
+            mgenerador.MdiParent = this;
+            mgenerador.Show();
+        }
+
+        private void mixtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.IsMdiContainer = true;
+            Mixto xgenerador = new Mixto();
+            xgenerador.MdiParent = this;
+            xgenerador.Show();
+        }
     }
 }
